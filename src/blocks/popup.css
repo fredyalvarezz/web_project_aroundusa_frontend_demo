@@ -1,0 +1,457 @@
+.popup {
+  display: none;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin: auto;
+  padding-top: 15px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+  align-content: center;
+  top: 0;
+  left: 0;
+
+}
+
+/* === Popup de confirmación (eliminar tarjeta) === */
+
+.popup_type_confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_opened {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_type_confirm .popup__container {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 430px;
+  width: calc(100% - 40px);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup_type_confirm .popup__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.popup_type_confirm .popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup_type_confirm .popup__save-button {
+  width: 100%;
+  max-width: 358px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.popup_type_confirm .popup__save-button:hover {
+  opacity: 0.8;
+}
+
+.popup_type_confirm .popup__close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #555;
+  transition: opacity 0.3s ease;
+}
+
+.popup_type_confirm .popup__close-button:hover {
+  opacity: 0.7;
+}
+.popup_type_confirm .popup__container {
+  position: relative; 
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 430px;
+  width: calc(100% - 40px);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.popup__button-closed {
+  display: flex;
+  font-size: 30px;
+  justify-content: end;
+  background: none;
+  color: #fff;
+  border-style: none;
+  margin-right: 5%;
+  width: 100%;
+
+}
+
+.popup__button-closed:hover {
+  opacity: 80%;
+}
+
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  max-width: 430px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+
+}
+
+.popup__container-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 430px;
+  width: calc(100% - 20px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+}
+
+.popup__container-text {
+  font-family: "Inter-Black", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  max-width: 330px;
+  margin: 35px 27px auto;
+}
+
+
+.popup__input {
+  margin: 20px 30px;
+  border-style: none;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+  max-width: 358px;
+}
+
+.popup__container-button {
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup__container-save {
+  max-width: 358px;
+  width: calc(100% - 20px);
+  margin: 10px 0 15px 0;
+  border-color: #C4C4C4;
+  border-radius: 1PX;
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+}
+
+.popup__container-save:hover {
+  opacity: 80%;
+}
+
+
+
+/*********************************************************/
+/*Errores*/
+.popup__input_type_error {
+  border-color: red;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.popup__error_visible {
+  display: block;
+}
+
+.popup__button_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/*Popup image*/
+.popup__container-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  max-width: 816px;
+}
+
+.popup__image {
+  max-width: 90%;
+  max-height: 74vh;
+  border-radius: 10px;
+}
+
+.popup__caption {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 7px black;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*error en add popup*/
+.popup__error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: block;
+  text-align: center;
+}
+
+.popup__redirect {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.popup__redirect-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.popup__redirect-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+/*--------------------------------------------------*/
+ /*Popup signin y signup*/
+/* Fondo de login/register */
+.popup__log {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Contenedor del form */
+.popup__container-all-log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 358px; 
+  width: 100%;
+  margin: auto; 
+}
+
+/* Caja del formulario */
+.popup__container-log {
+  display: flex;
+  flex-direction: column;
+  background-color: #000; 
+  color: #fff;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+   margin-top: 30px;
+}
+
+/* Título centrado */
+.popup__container-text-log {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 40px 0; 
+  color: #fff;
+}
+
+/* Inputs */
+.popup__input-log {
+  border: none;
+  border-bottom: 1px solid #fff; 
+  background: transparent;
+  color: #fff;
+  outline: none;
+  width: 100%;          
+  max-width: 358px;    
+  margin: 10px auto;    
+  padding: 10px;        
+  font-size: 14px;
+  box-sizing: border-box; 
+}
+.popup__input-log:last-of-type {
+  margin-bottom: 50px; 
+}
+
+/* Botón */
+.popup__container-save-log {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 0;
+  font-size: 18px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.popup__container-save-log:hover {
+  opacity: 0.9;
+}
+
+/* Texto de redirección */
+.popup__redirect {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.popup__redirect-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popup__redirect-link:hover {
+  text-decoration: underline;
+}
+/*Popup de error al iniciar sesion o registrar usuario */
+/* Estilos base */
+.info-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.info-tooltip__content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 430px;
+  max-width: 90%;
+  height: 330px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ícono */
+.info-tooltip__icon {
+  width: 120px;
+  height: 120px;
+  margin: 40px 0;
+}
+
+/* Texto */
+.info-tooltip__message {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0;
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Botón cerrar */
+.info-tooltip__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+}
+.info-tooltip__close:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .popup__container-all-log {
+  max-width: 300px;
+  width: 90%;
+}
+
+.popup__container-text-log {
+  font-size: 20px;
+}
+
+  .info-tooltip__content {
+    max-width: 280px;
+    width: 100%;
+    margin: 0 20px;
+    padding: 15px 10px;
+  }
+
+  .info-tooltip__icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .info-tooltip__message {
+    font-size: 20px;
+  }
+
+  .info-tooltip__close {
+    font-size: 35px;
+    top: 10px;
+    right: 10px;
+  }
+}

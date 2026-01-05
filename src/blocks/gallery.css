@@ -1,0 +1,191 @@
+.gallery {
+  max-width: 880px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.gallery__card-button-delete {
+  display: flex;
+  position: absolute;
+  background: none;
+  border-style: none;
+  width: 18px;
+  height: 20px;
+  right: 10px;
+  top: 10px;
+}
+
+.gallery__card-button-delete:hover {
+  opacity: 30%;
+}
+
+.gallery__card-button-delete-hiden {
+  display: none;
+}
+
+.gallery__card {
+  max-width: 282px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gallery__card-picture {
+  width: 100%;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+}
+
+.gallery__card-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  max-width: 282px;
+}
+
+
+.gallery__card-content-text {
+  max-width: 246px;
+  font-family: "Inter-Black", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 5%;
+}
+
+.gallery__card-like-button {
+  max-width: 21px;
+  max-height: 19px;
+  border-style: none;
+  background-color: #fff;
+  border: none;
+  align-self: center;
+  padding-right: 30px;
+}
+
+.gallery__card-like-picture {
+  width: 19px;
+  height: 17px;
+}
+
+.gallery__card-like-picture:hover {
+  opacity: 50%;
+}
+
+.like {
+  background-image: url("https://img.icons8.com/ios-filled/50/like--v1.png");
+  background-size: cover;
+}
+
+.gallery__card-like-button-hiden {
+  display: none;
+  background-color: #000;
+}
+.gallery__card-like-button_is-active {
+  background-color: transparent;
+
+  background-size: cover;
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:930px) {
+  .gallery {
+    margin: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .gallery__card {
+    max-width: 350px;
+    margin: 10px 0 10px 20px;
+  }
+
+  .gallery__card-content {
+    max-width: 350px;
+  }
+
+}
+
+
+@media screen and (max-width:770px) {
+  .gallery {
+    margin: 50px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery__card {
+    max-width: 250px;
+    border-radius: 10px;
+    margin: 10px 0 10px 30px;
+  }
+
+  .gallery__card-content {
+    max-width: 250px;
+  }
+
+}
+
+@media screen and (max-width:650px) {
+  .gallery__card {
+    width: 230px;
+    margin: 10px 0 10px 20px;
+  }
+
+  .gallery__card-content {
+    max-width: 230px;
+  }
+
+
+}
+
+@media screen and (max-width:610px) {
+  .gallery {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 25px;
+  }
+
+  .gallery__card {
+    width: 350px;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .gallery__card-content {
+    max-width: 350px;
+  }
+
+}
+
+
+@media screen and (max-width:390px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 25px;
+  }
+
+  .gallery__card {
+    width: 290px;
+    height: 361px;
+    margin: auto;
+  }
+}

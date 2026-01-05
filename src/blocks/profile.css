@@ -1,0 +1,205 @@
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 880px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.profile__avatar{
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.profile__info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 415px;
+  height: 77px;
+  margin: 15px 0 0 30px;
+}
+.profile__info-name{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  margin: 0;
+  width: 350px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+.profile__info-details{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+
+}
+.profile__info-edit-button{
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  border: 2px solid #fff;
+  margin: 15px 19px 0 18px;
+
+}
+.profile__info-edit-button:hover{
+  opacity: 60%;
+}
+.profile__info-edit-button-img{
+  width: 10px;
+  height: 10px;
+  align-items: center;
+
+}
+.profile__info-add-button{
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  border: 2px solid #fff;
+  margin: 30px 10px 0 auto;
+}
+.profile__info-add-button:hover{
+  opacity: 60%;
+}
+
+.profile__info-add-button-img{
+  width: 22px;
+  height: 22px;
+  align-items: center;
+
+}
+/*Cambio de perfil*/
+.profile__avatar-container {
+  position: relative;
+  display: inline-block;
+margin: auto;
+}
+
+.profile__avatar-edit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5)
+    url("https://img.icons8.com/ios-filled/50/ffffff/edit--v1.png")
+    center center no-repeat;
+  background-size: 30px 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile__avatar-container:hover .profile__avatar-edit-icon {
+  opacity: 1;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* @media screen  and (max-width:930px) {
+  .profile{
+    margin: 0 55px;
+
+  }
+  .profile__info-add-button{
+    width: 130px;
+    margin: 30px 30px 0 0;
+  }
+  .profile__info-name{
+    width: 320px;
+
+  }
+
+
+
+} */
+
+/* @media  screen and (max-width:713px) {
+  .profile__info-name{
+    width: 300px;
+
+
+  }
+
+} */
+
+@media screen and (max-width:610px) {
+  .profile{
+    flex-direction: column;
+    max-width: 282px;
+    margin: 100px auto;
+  }
+
+  .profile__avatar{
+    margin: auto;
+  }
+
+  .profile__info{
+    width: 282px;
+    height: 50px;
+  }
+
+  .profile__info-name{
+    font-size: 30px;
+    width: 196px;
+   }
+
+  .profile__info-edit-button{
+    margin: 10px 10px;
+
+  }
+
+  .profile__info-add-button{
+    width: 282px;
+    margin: 20% auto;
+  }
+}
+
+@media screen and (max-width:390px) {
+  .profile{
+    flex-direction: column;
+    max-width: 282px;
+    margin: 100px auto;
+  }
+
+  .profile__avatar{
+    margin: auto;
+  }
+
+  .profile__info{
+    width: 282px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .profile__info-name{
+    font-size: 22px;
+    line-height: 100%;
+    width: 196px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile__info-details{
+    padding-left: 35px;
+    justify-content: center;
+
+  }
+  .profile__info-edit-button{
+    margin: 0;
+  }
+
+  .profile__info-add-button{
+    width: 280px;
+    height: 50px;
+    margin: 15% auto;
+  }
+}
